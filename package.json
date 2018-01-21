@@ -1,0 +1,33 @@
+{
+  "name": "FootballDataDotOrgVisualiser",
+  "version": "0.1.0",
+  "description": "football-data.org visualiser by Sergiu Tripon",
+  "author": "Sergiu Tripon",
+  "main": "Gruntfile.js",
+  "homepage": "http://sergiu-tripon.com/football-data-dot-org-visualiser",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SergiuTripon/football-data-dot-org-visualiser"
+  },
+  "bugs": {
+    "url": "https://github.com/SergiuTripon/football-data-dot-org-visualiser/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "csswring": "^6.0.2",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-import": "^1.0.3",
+    "grunt-postcss": "^0.9.0",
+    "grunt-real-favicon": "^0.2.2",
+    "grunt-shell": "^2.1.0",
+    "livereload": "^0.6.3",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,16 @@
+# general
+title: football-data.org visualiser
+author: Sergiu Tripon
+description: ""
+timezone: Europe/London
+
+# urls
+url: "http://sergiu-tripon.com"
+baseurl: "/football-data-dot-org-visualiser"
+
+# exclude
+exclude:
+- node_modules
+- Gruntfile.js
+- package.json
+- README.md

@@ -1,0 +1,282 @@
+---
+layout: default
+title: "football-data.org visualiser"
+---
+
+<div id="competitions">
+    <div class="card bg-transparent border-info">
+        <div class="card-header border-info text-info">Competitions</div>
+        <div class="card-body text-center">
+
+        </div>
+    </div>
+</div>
+
+<div id="competition">
+    <!-- competition breadcrumb -->
+    <nav id="competition-breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb bg-transparent border border-info">
+            <li class="breadcrumb-item" aria-current="page"><a href="#" class="text-info">Back to Competitions</a></li>
+        </ol>
+    </nav>
+    <!-- competition nav -->
+    <div id="competition-nav" class="card bg-transparent border-info mb-3">
+        <div class="card-header border-info text-info"></div>
+        <div class="card-body text-info text-center">
+            <a class='page-scroll btn btn-info bg-transparent text-info mt-0 mr-2 mb-2 ml-0' href='#competition-info'>Information</a>
+            <a class='page-scroll btn btn-info bg-transparent text-info mt-0 mr-2 mb-2 ml-0' href='#competition-teams'>Teams</a>
+            <a class='page-scroll btn btn-info bg-transparent text-info mt-0 mr-2 mb-2 ml-0' href='#competition-standings'>Standings</a>
+            <hr class="border-info">
+            <a class='page-scroll btn btn-info bg-transparent text-info mt-0 mr-2 mb-2 ml-0' href='#competition-fixtures-in-play'>Fixtures - In Play</a>
+            <a class='page-scroll btn btn-info bg-transparent text-info mt-0 mr-2 mb-2 ml-0' href='#competition-fixtures-scheduled'>Fixtures - Scheduled</a>
+            <a class='page-scroll btn btn-info bg-transparent text-info mt-0 mr-2 mb-2 ml-0' href='#competition-fixtures-finished'>Fixtures - Finished</a>
+        </div>
+    </div>
+    <!-- competition info -->
+    <div id="competition-info" class="card bg-transparent border-info mb-3">
+        <div class="card-header border-info text-info">Information</div>
+        <div class="card-body text-info">
+        </div>
+    </div>
+    <!-- competition teams -->
+    <div id="competition-teams" class="card bg-transparent border-info mb-3">
+        <div class="card-header border-info text-info">Teams</div>
+        <div class="card-body text-info text-center">
+        </div>
+    </div>
+    <!-- competition standings -->
+    <div id="competition-standings" class="card bg-transparent border-info mb-3">
+        <div class="card-header border-info text-info">Standings</div>
+        <div class="card-body text-info">
+            <div class="table-responsive">
+                <table class="table table-bordered text-info text-center mb-0">
+                    <thead>
+                    <tr>
+                        <th class="border-info align-middle" scope="col">#</th>
+                        <th class="border-info text-left align-middle" scope="col">Club</th>
+                        <th class="border-info align-middle" scope="col">MP</th>
+                        <th class="border-info align-middle" scope="col">W</th>
+                        <th class="border-info align-middle" scope="col">D</th>
+                        <th class="border-info align-middle" scope="col">L</th>
+                        <th class="border-info align-middle" scope="col">GF</th>
+                        <th class="border-info align-middle" scope="col">GA</th>
+                        <th class="border-info align-middle" scope="col">GD</th>
+                        <th class="border-info align-middle" scope="col">Pts</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div id="competition-standings-error"></div>
+        </div>
+    </div>
+    <!-- competition fixtures -->
+    <div id="competition-fixtures-in-play" class="card bg-transparent border-info mb-3">
+        <div class="card-header border-info text-info">Fixtures - In Play</div>
+        <div class="card-body text-info">
+            <div class="table-responsive">
+                <table class="table table-bordered text-info text-center mb-0">
+                    <thead>
+                    <tr>
+                        <th class="border-info align-middle" scope="col">Date & Time</th>
+                        <th class="border-info align-middle" scope="col">Home Team</th>
+                        <th class="border-info align-middle" scope="col">Score</th>
+                        <th class="border-info align-middle" scope="col">Away Team</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div id="competition-fixtures-in-play-error"></div>
+        </div>
+    </div>
+    <!-- competition fixtures scheduled -->
+    <div id="competition-fixtures-scheduled" class="card bg-transparent border-info mb-3">
+        <div class="card-header border-info text-info">Fixtures - Scheduled</div>
+        <div class="card-body text-info">
+            <div class="table-responsive">
+                <table class="table table-bordered text-info text-center mb-0">
+                    <thead>
+                    <tr>
+                        <th class="border-info align-middle" scope="col">Date & Time</th>
+                        <th class="border-info align-middle" scope="col">Home Team</th>
+                        <th class="border-info align-middle" scope="col">Score</th>
+                        <th class="border-info align-middle" scope="col">Away Team</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div id="competition-fixtures-scheduled-error"></div>
+        </div>
+    </div>
+    <!-- competition fixtures finished -->
+    <div id="competition-fixtures-finished" class="card bg-transparent border-info">
+        <div class="card-header border-info text-info">Fixtures - Finished</div>
+        <div class="card-body text-info">
+            <div class="table-responsive">
+                <table class="table table-bordered text-info text-center mb-0">
+                    <thead>
+                    <tr>
+                        <th class="border-info align-middle" scope="col">Date & Time</th>
+                        <th class="border-info align-middle" scope="col">Home Team</th>
+                        <th class="border-info align-middle" scope="col">Score</th>
+                        <th class="border-info align-middle" scope="col">Away Team</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div id="competition-fixtures-finished-error"></div>
+        </div>
+    </div>
+</div>
+
+<div id="team">
+    <!-- team breadcrumb -->
+    <nav id="team-breadcrumb" aria-label="breadcrumb">
+    <ol class="breadcrumb bg-transparent border border-info">
+        <li class="breadcrumb-item" aria-current="page"><a class="text-info" href="#"></a></li>
+    </ol>
+    </nav>
+    <!-- team nav -->
+    <div id="team-nav" class="card bg-transparent border-info mb-3">
+        <div class="card-header border-info text-info"></div>
+        <div class="card-body text-info text-center">
+            <a class='page-scroll btn btn-info bg-transparent text-info mt-0 mr-2 mb-2 ml-0' href='#team-info'>Information</a>
+            <a class='page-scroll btn btn-info bg-transparent text-info mt-0 mr-2 mb-2 ml-0' href='#team-players'>Teams</a>
+            <hr class="border-info">
+            <a class='page-scroll btn btn-info bg-transparent text-info mt-0 mr-2 mb-2 ml-0' href='#team-fixtures-in-play'>Fixtures - In Play</a>
+            <a class='page-scroll btn btn-info bg-transparent text-info mt-0 mr-2 mb-2 ml-0' href='#team-fixtures-scheduled'>Fixtures - Scheduled</a>
+            <a class='page-scroll btn btn-info bg-transparent text-info mt-0 mr-2 mb-2 ml-0' href='#team-fixtures-finished'>Fixtures - Finished</a>
+        </div>
+    </div>
+    <!-- team info -->
+    <div id="team-info" class="card bg-transparent border-info mb-3">
+        <div class="card-header border-info text-info">Information</div>
+        <div class="card-body text-info">
+        </div>
+    </div>
+    <!-- team players -->
+    <div id="team-players" class="card bg-transparent border-info mb-3">
+        <div class="card-header border-info text-info">Players</div>
+        <div class="card-body text-info">
+            <dl class="row mb-0">
+                <dt id="goalkeepers" class="col-sm-2 text-info"></dt>
+                <dd class="col-sm-10 mb-0"></dd>
+            </dl>
+            <hr class="border-info mb-4">
+            <dl class="row mb-0">
+                <dt id="defenders" class="col-sm-2 text-info"></dt>
+                <dd class="col-sm-10 mb-0"></dd>
+            </dl>
+            <hr class="border-info mb-4">
+            <dl class="row mb-0">
+                <dt id="midfielders" class="col-sm-2 text-info"></dt>
+                <dd class="col-sm-10 mb-0"></dd>
+            </dl>
+            <hr class="border-info mb-4">
+            <dl class="row mb-0">
+                <dt id="attackers" class="col-sm-2 text-info"></dt>
+                <dd class="col-sm-10 mb-0"></dd>
+            </dl>
+            <div id="team-players-error"></div>
+        </div>
+    </div>
+    <!-- team fixtures in play -->
+    <div id="team-fixtures-in-play" class="card bg-transparent border-info mb-3">
+        <div class="card-header border-info text-info">Fixtures - In Play</div>
+        <div class="card-body text-info">
+            <div class="table-responsive">
+                <table class="table table-bordered text-info text-center mb-0">
+                    <thead>
+                    <tr>
+                        <th class="border-info align-middle" scope="col">Date & Time</th>
+                        <th class="border-info align-middle" scope="col">Home Team</th>
+                        <th class="border-info align-middle" scope="col">Score</th>
+                        <th class="border-info align-middle" scope="col">Away Team</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div id="team-fixtures-in-play-error"></div>
+        </div>
+    </div>
+    <!-- team fixtures scheduled -->
+    <div id="team-fixtures-scheduled" class="card bg-transparent border-info mb-3">
+        <div class="card-header border-info text-info">Fixtures - Scheduled</div>
+        <div class="card-body text-info">
+            <div class="table-responsive">
+                <table class="table table-bordered text-info text-center mb-0">
+                    <thead>
+                    <tr>
+                        <th class="border-info align-middle" scope="col">Date & Time</th>
+                        <th class="border-info align-middle" scope="col">Home Team</th>
+                        <th class="border-info align-middle" scope="col">Score</th>
+                        <th class="border-info align-middle" scope="col">Away Team</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div id="team-fixtures-scheduled-error"></div>
+        </div>
+    </div>
+    <!-- team fixtures finished -->
+    <div id="team-fixtures-finished" class="card bg-transparent border-info mb-3">
+        <div class="card-header border-info text-info">Fixtures - Finished</div>
+        <div class="card-body text-info">
+            <div class="table-responsive">
+                <table class="table table-bordered text-info text-center mb-0">
+                    <thead>
+                    <tr>
+                        <th class="border-info align-middle" scope="col">Date & Time</th>
+                        <th class="border-info align-middle" scope="col">Home Team</th>
+                        <th class="border-info align-middle" scope="col">Score</th>
+                        <th class="border-info align-middle" scope="col">Away Team</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div id="team-fixtures-finished-error"></div>
+        </div>
+    </div>
+    <!-- team analysis -->
+    <div id="team-analysis" class="card bg-transparent border-info mb-3">
+        <div class="card-header border-info text-info">Analysis</div>
+        <div class="card-body text-info">
+            <div id="team-analysis-canvas"></div>
+            <div id="team-analysis-error"></div>
+        </div>
+    </div>
+</div>
+
+<div id="player">
+    <!-- player breadcrumb -->
+    <nav id="player-breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb bg-transparent border border-info">
+            <li class="breadcrumb-item" aria-current="page"><a class="text-info" href="#"></a></li>
+        </ol>
+    </nav>
+    <!-- player info -->
+    <div id="player-info" class="card bg-transparent border-info mb-3">
+        <div class="card-header border-info text-info">Player</div>
+        <div class="card-body text-info">
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div id="footer" class="fixed-bottom bg-dark border border-top border-left-0 border-right-0 border-bottom-0 border-info text-center text-info pt-3 pb-3">
+    Copyright <i class="fa fa-copyright"></i> <script type="text/javascript"> document.write(new Date().getFullYear()); </script> <a class="text-info" href="http://sergiu-tripon.com/" target="_blank"><u>Sergiu Tripon</u></a>.<br>
+    Powered by <a class="text-info" href="https://www.football-data.org/" target="_blank"><u>football-data.org</u></a>. Code licensed under <a class="text-info" href="{{ '/LICENSE.md' | prepend: site.baseurl | prepend: site.url }}" target="_blank"><u>MIT License</u></a>.
+</div>
