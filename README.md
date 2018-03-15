@@ -4,8 +4,8 @@
 
 ---
 
-## football-data.org visualiser by Sergiu Tripon
+## football-data.org visualiser by SenseiFavour
 
-**Link**: [http://sergiu-tripon.com/football-data-dot-org-visualiser/](http://sergiu-tripon.com/football-data-dot-org-visualiser/)
+**Link**: [http://footballdatadotorg.herokuapp.com/](http://footballdatadotorg.herokuapp.com/)
 
 A one-page visualiser powered by data from [football-data.org](https://www.football-data.org/).
