@@ -5,8 +5,8 @@ description: ""
 timezone: Europe/London
 
 # urls
-url: "http://sergiu-tripon.com"
-baseurl: "/football-data-dot-org-visualiser"
+url: "http://footballdatadotorg.herokuapp.com"
+baseurl: "/"
 
 # exclude
 exclude:
